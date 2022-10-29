@@ -13,10 +13,10 @@ const Footer: FC = (): JSX.Element => {
             <div className='footer_site_map'>
             <h3 className='footer_site_map_title'>Mapa del sitio</h3>
             <ul className='footer_site_map_ul'>
-                <li className='footer_site_map_item'><p>nosotros</p></li>
-                <li className='footer_site_map_item'><p>planes</p></li>
-                <li className='footer_site_map_item'><p>cobertura</p></li>
-                <li className='footer_site_map_item'><p>contacto</p></li>
+                <li className='footer_site_map_item'><a>nosotros</a></li>
+                <li className='footer_site_map_item'><a>planes</a></li>
+                <li className='footer_site_map_item'><a>cobertura</a></li>
+                <li className='footer_site_map_item'><a>contacto</a></li>
             </ul>
             </div>
             <div className='footer_social'>
