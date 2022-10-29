@@ -8,7 +8,7 @@ const Footer: FC = (): JSX.Element => {
     <footer className="footer">
         <div className="general_container footer_sections_container">
             <div className='footer_copyright'>
-                    Macs © 2022. Todos Los Derechos Reservados.
+                 <p> Macs © 2022. Todos Los Derechos Reservados.</p>  
             </div>
             <div className='footer_site_map'>
             <h3 className='footer_site_map_title'>Mapa del sitio</h3>
@@ -21,8 +21,8 @@ const Footer: FC = (): JSX.Element => {
             </div>
             <div className='footer_social'>
                 <div className='footer_social_icons'>
-                    <img className="footer_social_icon" src={Facebook} alt="facebook logo" />
-                    <img className="footer_social_icon" src={Instagram} alt="instagram logo" />
+                   <a href="https://www.facebook.com/CuidaTS/" target="_blank" rel="noopener noreferrer"><img className="footer_social_icon" src={Facebook} alt="facebook logo" /></a> 
+                   <a href="https://instagram.com/afiliateahominis?igshid=NjZiMGI4OTY=" target="_blank" rel="noopener noreferrer"><img className="footer_social_icon" src={Instagram} alt="instagram logo" /></a> 
                 </div>
             </div>
         </div>
