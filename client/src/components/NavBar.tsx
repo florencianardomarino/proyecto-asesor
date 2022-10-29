@@ -13,10 +13,10 @@ const NavBar: FC = (): JSX.Element => {
         <div className='navBar_menu_container'> 
             <div className='navBar_menu'>
                 <ul className='navBar_menu_ul' >
-                    <li className='navBar_menu_item'><p>nosotros</p></li>
-                    <li className='navBar_menu_item'><p>planes</p></li>
-                    <li className='navBar_menu_item'><p>cobertura</p></li>
-                    <li className='navBar_menu_item'><p>contacto</p></li>
+                    <li className='navBar_menu_item'><a>nosotros</a></li>
+                    <li className='navBar_menu_item'><a>planes</a></li>
+                    <li className='navBar_menu_item'><a>cobertura</a></li>
+                    <li className='navBar_menu_item'><a>contacto</a></li>
                 </ul>
             </div>
         </div>
