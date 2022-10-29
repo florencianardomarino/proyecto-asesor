@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
-import './App.css';
+import './App.scss';
+import NavBar from './components/NavBar';
 
 const App: FC = (): JSX.Element => {
   return (
     <>
       <div className="App">
-        <h1>Home</h1>
+       <NavBar/>
       </div>
     </>
   );
