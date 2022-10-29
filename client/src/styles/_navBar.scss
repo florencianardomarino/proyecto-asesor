@@ -22,6 +22,9 @@
     .navBar_menu_container {
       width: 50%;
       min-width: 500px;
+      @media (max-width: 780px){
+        display: none;
+      }
       .navBar_menu_ul{
             display: flex;
             flex-direction: row;
