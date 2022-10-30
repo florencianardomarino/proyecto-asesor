@@ -16,31 +16,31 @@ const Planes: FC = (): JSX.Element => {
     <div className='planes_container general_container'>
       <div className='tabs'>
         <div className='planes_fake_container'>
-            <div className='planes_list_container'>
-          <input
-            type='radio'
-            id='tab1'
-            name='tab-control'
-            onClick={() => setChecked(1)}
-          />
-          <input
-            type='radio'
-            id='tab2'
-            name='tab-control'
-            onClick={() => setChecked(2)}
-          />
-          <input
-            type='radio'
-            id='tab3'
-            name='tab-control'
-            onClick={() => setChecked(3)}
-          />
-          <input
-            type='radio'
-            id='tab4'
-            name='tab-control'
-            onClick={() => setChecked(4)}
-          />
+          <div className='planes_list_container'>
+            <input
+              type='radio'
+              id='tab1'
+              name='tab-control'
+              onClick={() => setChecked(1)}
+            />
+            <input
+              type='radio'
+              id='tab2'
+              name='tab-control'
+              onClick={() => setChecked(2)}
+            />
+            <input
+              type='radio'
+              id='tab3'
+              name='tab-control'
+              onClick={() => setChecked(3)}
+            />
+            <input
+              type='radio'
+              id='tab4'
+              name='tab-control'
+              onClick={() => setChecked(4)}
+            />
             <ul>
               <li title='Features'>
                 <label htmlFor='tab1' role='button'>
@@ -65,49 +65,93 @@ const Planes: FC = (): JSX.Element => {
             </ul>
             <div className='slider'>
               <div className='indicator'></div>
+            </div>
+
+            <div className='content'>
+              <section className='tab_content'>
+                <div className='tab_content_wrapper'>
+                    <div className='tab_content_img_container'>
+                    <img
+                        className='tab_content_img'
+                        src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGVhbHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+                        alt=''
+                    />
+                    </div>
+                    <div className='tab_content_list'>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                    </div>
+                </div>
+              </section>
+              <section className='tab_content'>
+              <div className='tab_content_wrapper'>
+                <div className='tab_content_img_container'>
+                  <img
+                    className='tab_content_img'
+                    src='https://images.unsplash.com/photo-1558554142-0b016c857381?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGhlYWx0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                    alt=''
+                  />
+                </div>
+                <div className='tab_content_list'>
+                  <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                  </ul>
+                </div>
+              </div>
+              </section>
+              <section className='tab_content'>
+              <div className='tab_content_wrapper'>
+                <div className='tab_content_img_container'>
+                  <img
+                    className='tab_content_img'
+                    src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGVhbHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+                    alt=''
+                  />
+                </div>
+                <div className='tab_content_list'>
+                  <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                  </ul>
+                </div>
+                </div>
+              </section>
+              <section>
+                <h2>Returns</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+                dicta vero rerum? Eaque repudiandae architecto libero
+                reprehenderit aliquam magnam ratione quidem? Nobis doloribus
+                molestiae enim deserunt necessitatibus eaque quidem incidunt.
+              </section>
+            </div>
           </div>
-         
-          <div className='content'>
-            <section>
-              <h2>Features</h2>Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Ea dolorem sequi, quo tempore in eum obcaecati
-              atque quibusdam officiis est dolorum minima deleniti ratione
-              molestias numquam. Voluptas voluptates quibusdam cum?elit. Ea
-              dolorem sequi, quo tempore in eum obcaecati atque quibusdam
-              officiis est dolorum minima deleniti ratione molestias numquam.
-              Voluptas voluptates quibusdam cum?elit. Ea dolorem sequi, quo
-              tempore in eum obcaecati atque quibusdam officiis est dolorum
-              minima deleniti ratione molestias numquam. Voluptas voluptates
-              quibusdam cum?elit. Ea dolorem sequi, quo tempore in eum obcaecati
-              atque quibusdam officiis est dolorum minima deleniti ratione
-              molestias numquam. Voluptas voluptates quibusdam cum?elit. Ea
-              dolorem sequi, quo tempore in eum obcaecati atque quibusdam
-              officiis est dolorum minima deleniti ratione molestias numquam.
-              Voluptas voluptates quibusdam cum?
-            </section>
-            <section>
-              <h2>Delivery Contents</h2>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-              quas adipisci a accusantium eius ut voluptatibus ad impedit nulla,
-              ipsa qui. Quasi temporibus eos commodi aliquid impedit amet,
-              similique nulla.
-            </section>
-            <section>
-              <h2>Shipping</h2>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-              nemo ducimus eius, magnam error quisquam sunt voluptate labore,
-              excepturi numquam! Alias libero optio sed harum debitis! Veniam,
-              quia in eum.
-            </section>
-            <section>
-              <h2>Returns</h2>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
-              dicta vero rerum? Eaque repudiandae architecto libero
-              reprehenderit aliquam magnam ratione quidem? Nobis doloribus
-              molestiae enim deserunt necessitatibus eaque quidem incidunt.
-            </section>
-          </div>
-        </div>
         </div>
       </div>
     </div>
