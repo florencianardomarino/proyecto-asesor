@@ -35,11 +35,10 @@ const Header: FC = (): JSX.Element => {
           </Slider>
       </div>
       <div className='text_container'>
-        <h1 className='banner_text'>Nos mueve tu bienestar, por eso trabajamos para bridarte un servicio cada vez mejor, a un precio que podés acceder</h1>
+        <h1 className='banner_text'>Somos asesores de Hominis. Nos mueve tu bienestar, por eso trabajamos para brindarte un servicio cada vez mejor, a un precio que podés acceder.</h1>
         <button className='contact_button'>CONTACTAR UN ASESOR</button>
       </div>
     </div>
-
   )
 }
 
