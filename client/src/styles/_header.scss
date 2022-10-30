@@ -1,0 +1,32 @@
+@import './config/variables';
+
+.main_container{
+    position: relative;
+    width: 100%;
+    .main_banner{
+      width:100%;
+        div{
+          width: 100%;
+          height: 600px;
+          background-color: $main-color;
+      }
+    }
+    .text_container{
+        position: absolute;
+        bottom: 90px;
+        left: 16.8%;
+        .contact_button{
+            background-color: $main-color;
+            color: $white;
+            font-size: $button-text-size;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 8px;
+        }
+        .banner_text{
+            font-size: $title-size;
+            width: 425px;
+            margin-bottom: 40px;
+        }
+    }
+}
