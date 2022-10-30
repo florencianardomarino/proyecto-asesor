@@ -8,6 +8,9 @@
   z-index: 10;
   top: 0;
   background-color: $white;
+  @media (max-width: 720px){
+   position: static;
+  }
   .navBar_container {
     width: 100%;
     display: flex;
