@@ -1,0 +1,101 @@
+@import './config/variables';
+
+.main_container{
+    position: relative;
+    .main_container_form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 50px;
+    position: absolute;
+    top: 280px;
+    left: 25%;
+    background-color: white;
+    box-shadow: 1px 1px 20px grey;
+    border-radius: 8px;
+    .form_text{
+        font-size: $title-size;
+        color: $main-color;
+    }
+    .form_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        .card_contact_container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .card_image{
+                width: 40px;
+                margin: 20px;
+            }
+            .card_input{
+                width: 80%;
+                height: 50px;
+                border: none;
+                border-bottom: 3px solid rgb(190, 190, 190);
+                color: $font-color;
+                font-size: $text-size;
+                transition: 0.5s;
+                &:focus{
+                    outline-style: none;
+                    border-bottom: 3px solid $main-color;
+                }
+                &:active{
+                    outline-style: none;
+                    border-bottom: 3px solid $main-color;
+                }
+            }
+        }
+        .card_input_textarea{
+            margin: 10px 0px 0px 80px;
+            width: 80%;
+            height: 100px;
+            border: 3px solid rgb(190, 190, 190);
+            color: $font-color;
+            font-size: $text-size;
+            transition: 0.5s;
+            text-align: start;
+            &:focus{
+                outline-style: none;
+                border: 3px solid $main-color;
+            }
+            &:active{
+                outline-style: none;
+                border: 3px solid $main-color;
+            }
+        }
+        .card_button{
+            background-color: $main-color;
+            color: $white;
+            font-size: $button-text-size;
+            border: none;
+            padding: 10px 0px;
+            border-radius: 8px;
+            margin: 20px 0px 0px 80px;
+            width: 80%;
+            cursor: pointer;
+            @media(max-width: 425px){
+                font-size: 14px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            &:hover{
+                filter: brightness(1.1);
+            }
+        }
+    }
+}
+.contact_banner{
+        width: 100%;
+        height: 600px;
+        margin-bottom: 500px;
+        &_img{
+            width: 100%;
+        }
+}
+}
