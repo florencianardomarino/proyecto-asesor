@@ -30,7 +30,7 @@ const ContactForm: FC = (): JSX.Element => {
                     <div className='card_contact_container'>
                     <img className='card_image' src={workInactive} alt="" />
                         <select required className='card_input'>
-                            <option>-- Situacion laboral --</option>
+                            <option>- Situacion laboral -</option>
                             <option>Relación de dependencia</option>
                             <option>Autónomo / Monotributista</option>
                             <option>Desempleado / Trabajador informal</option>
