@@ -68,6 +68,7 @@ const Planes: FC = (): JSX.Element => {
             </div>
 
             <div className='content'>
+              {/* plan 1 */}
               <section className='tab_content'>
                 <div className='tab_content_wrapper'>
                   <div className='tab_content_img_container'>
@@ -78,6 +79,9 @@ const Planes: FC = (): JSX.Element => {
                     />
                   </div>
                   <div className='tab_content_list'>
+                    <h3 className='tab_content_left-title'>
+                      Principales prestaciones de la cobertura
+                    </h3>
                     <ul className='tab_content_list_ul'>
                       <li className='tab_content_list_item'>
                         <h3 className='tab_content_list_item-title'>
@@ -144,6 +148,9 @@ const Planes: FC = (): JSX.Element => {
                     </ul>
                   </div>
                   <div className='tab_content_list_2'>
+                    <h3 className='tab_content_right-title'>
+                      Beneficios Exclusivos
+                    </h3>
                     <ul className='tab_content_list_ul_2'>
                       <li className='tab_content_list_item_2'>
                         <h3 className='tab_content_list_item-title_2'>
@@ -197,6 +204,7 @@ const Planes: FC = (): JSX.Element => {
                   </div>
                 </div>
               </section>
+              {/* plan 2 */}
               <section className='tab_content'>
                 <div className='tab_content_wrapper'>
                   <div className='tab_content_img_container'>
@@ -207,42 +215,141 @@ const Planes: FC = (): JSX.Element => {
                     />
                   </div>
                   <div className='tab_content_list'>
-                    <ul>
-                      <li>1</li>
-                      <li>2</li>
-                      <li>3</li>
-                      <li>4</li>
-                      <li>5</li>
-                      <li>6</li>
-                      <li>7</li>
-                      <li>8</li>
-                      <li>9</li>
-                      <li>10</li>
+                    <h3 className='tab_content_left-title'>
+                      Plan exclusivo para uso en el Sanatorio Güemes Principales
+                      prestaciones de la cobertura
+                    </h3>
+                    <ul className='tab_content_list_ul'>
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Consultas médicas
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          Consultas médicas con copago. Consultas médicas en
+                          domicilio con copago. Servicios exclusivo de urgencias
+                          y emergencias.
+                        </p>
+                      </li>
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Prácticas
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          Estudios y prácticas de diagnóstico y tratamientos con
+                          copago.
+                        </p>
+                      </li>
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Internación
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          Servicio de internación clínica, quirúrgica y terapia
+                          intensiva sin cargo en Sanatorio Güemes.
+                        </p>
+                      </li>
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Salud mental
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          30 sesiones por año de consultas psiquiátricas y
+                          psicológicas con copago y 30 días sin cargo de
+                          internaciones psiquiátricas agudas.
+                        </p>
+                      </li>
+
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Odontología
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          Consultas, odontología general y urgencias con copago.
+                        </p>
+                      </li>
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Farmacias
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          Descuento en farmacias. Entre 40% y 100% según PMOE.
+                        </p>
+                      </li>
                     </ul>
                   </div>
                 </div>
               </section>
+              {/* plan 3 */}
               <section className='tab_content'>
                 <div className='tab_content_wrapper'>
                   <div className='tab_content_img_container'>
                     <img
                       className='tab_content_img'
-                      src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGVhbHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+                      src='https://images.unsplash.com/photo-1558554142-0b016c857381?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGhlYWx0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
                       alt=''
                     />
                   </div>
                   <div className='tab_content_list'>
-                    <ul>
-                      <li>1</li>
-                      <li>2</li>
-                      <li>3</li>
-                      <li>4</li>
-                      <li>5</li>
-                      <li>6</li>
-                      <li>7</li>
-                      <li>8</li>
-                      <li>9</li>
-                      <li>10</li>
+                    <h3 className='tab_content_left-title'>
+                      Plan exclusivo para uso en el Sanatorio Güemes Principales
+                      prestaciones de la cobertura
+                    </h3>
+                    <ul className='tab_content_list_ul'>
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Consultas médicas
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          Consultas médicas con copago. Consultas médicas en
+                          domicilio con copago. Servicios exclusivo de urgencias
+                          y emergencias.
+                        </p>
+                      </li>
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Prácticas
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          Estudios y prácticas de diagnóstico y tratamientos con
+                          copago.
+                        </p>
+                      </li>
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Internación
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          Servicio de internación clínica, quirúrgica y terapia
+                          intensiva sin cargo en Sanatorio Güemes.
+                        </p>
+                      </li>
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Salud mental
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          30 sesiones por año de consultas psiquiátricas y
+                          psicológicas con copago y 30 días sin cargo de
+                          internaciones psiquiátricas agudas.
+                        </p>
+                      </li>
+
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Odontología
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          Consultas, odontología general y urgencias con copago.
+                        </p>
+                      </li>
+                      <li className='tab_content_list_item'>
+                        <h3 className='tab_content_list_item-title'>
+                          Farmacias
+                        </h3>
+                        <p className='tab_content_list_item-description'>
+                          Descuento en farmacias. Entre 40% y 100% según PMOE.
+                        </p>
+                      </li>
                     </ul>
                   </div>
                 </div>
