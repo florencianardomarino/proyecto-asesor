@@ -1,46 +1,81 @@
-import React, { FC } from 'react'
-import nameInactive from '../assets/images/name_inactive.jpg'
-import phoneInactive from '../assets/images/phone_inactive.jpg'
-import workInactive from '../assets/images/work_inactive.jpg'
-import mailInactive from '../assets/images/mail_inactive.jpg'
+import React, { FC, useState } from 'react'
+import Form from './form/Form'
 import banner from '../assets/images/banner.jpg'
 import '../styles/main.scss'
+import Confirmation from './form/Confirmation'
+interface clientTypes {
+  name: string
+  phone: string
+  mail: string
+  work: string
+  comments?: string 
+}
 
 const ContactForm: FC = (): JSX.Element => {
+  const [name, setName] = useState<string>('');
+  const [phone, setPhone] = useState<string>('');
+  const [mail, setMail] = useState<string>('');
+  const [work, setWork] = useState<string>('');
+  const [comments, setComments] = useState<string>('');
+  const [dataClient, setDataClient] = useState<clientTypes | {}>({});
+  const [message, setMessage] = useState<boolean>(false);
+  const [confirmation, setConfirmation] = useState<boolean>(false)
+  
+  const clearForm = (): any => {
+    setName('');
+    setPhone('');
+    setMail('')
+    setWork('');
+    setComments('');
+  }
+
+  const handleSubmit = (e: any): void => {
+    e.preventDefault()
+    if ([name, phone, mail, work].includes('')) {
+      setMessage(true)
+    } else {
+      setMessage(false)
+      setDataClient({
+        name: name,
+        phone: phone,
+        mail: mail,
+        work: work,
+        comments: comments
+      })
+      setConfirmation(true)
+      clearForm()
+    } 
+  }
+
+  console.log('data cliente:', dataClient)
+
   return (
-    <div className='main_container'>
+   <>
+      <div className='main_container'>
         <div className='contact_banner'>
             <img className='contact_banner_img' src={banner} alt="" />
         </div>
         <div className='general_container main_container_form'>
-            <h2 className='form_text'>CONTACTANOS</h2>
-            <form className='form_container'>
-                    <div className='card_contact_container'>
-                        <img className='card_image' src={nameInactive} alt="" />
-                        <input required className='card_input' type="text" placeholder='Nombre y Apellido'/>
-                    </div>
-                    <div className='card_contact_container'>
-                        <img className='card_image' src={phoneInactive} alt="" />
-                        <input required className='card_input' type="number" placeholder='Telefono'/>
-                    </div>
-                    <div className='card_contact_container'>
-                        <img className='card_image' src={mailInactive} alt="" />
-                        <input required className='card_input' type="email" placeholder='Mail'/>
-                    </div>
-                    <div className='card_contact_container'>
-                    <img className='card_image' src={workInactive} alt="" />
-                        <select required className='card_input'>
-                            <option>- Situacion laboral -</option>
-                            <option>Relación de dependencia</option>
-                            <option>Autónomo / Monotributista</option>
-                            <option>Desempleado / Trabajador informal</option>
-                        </select>
-                    </div>
-                    <textarea className='card_input_textarea' placeholder='Dejanos tus comentarios'></textarea>
-                    <button className='card_button'>Enviar</button>
-            </form>
+        { !confirmation
+          ? <Form
+            handleSubmit={handleSubmit}
+            message={message}
+            name={name}
+            phone= {phone}
+            mail= {mail}
+            work= {work}
+            comments= {comments}
+            setName={setName}
+            setPhone={setPhone}
+            setMail={setMail}
+            setWork={setWork}
+            setComments={setComments}
+            />
+          : <Confirmation/>
+        }
         </div>
-    </div>
+      </div>
+    </>
   )
 }
 
