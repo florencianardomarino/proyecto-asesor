@@ -1,0 +1,33 @@
+.info_container{
+    width: 100%;
+    margin: 60px 0px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 12px 12px 3px rgba(0,0,0,0.26);
+    @media(max-width: 768px){
+        flex-direction: column;
+        box-shadow: 0px 0px;
+    }
+    .info_text_container{
+        width: 50%;
+        @media(max-width: 768px){
+            width: 90%;
+        }
+        .info_text{
+            margin: 15px;
+        }
+        .info_title{
+            margin-left: 15px;
+            color: $main-color;
+        }
+    }
+    .video_guemes{
+        width: 50%;
+        height: 100%;
+        @media(max-width: 768px){
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

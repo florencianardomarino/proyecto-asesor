@@ -4,7 +4,9 @@ import NavBar from './components/NavBar';
 import Header from './components/Header';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import Planes from './components/Planes'
+import Planes from './components/Planes';
+import InfoGuemes from './components/InfoGuemes';
+
 const App: FC = (): JSX.Element => {
   return (
     <>
@@ -12,6 +14,7 @@ const App: FC = (): JSX.Element => {
        <NavBar/>
        <Header/>
        <Planes/>
+       <InfoGuemes/>
        <ContactForm/>
        <Footer/>
       </div>
