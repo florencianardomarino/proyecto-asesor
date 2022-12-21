@@ -6,6 +6,7 @@ import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import Planes from './components/Planes';
 import InfoGuemes from './components/InfoGuemes';
+import WhatsApp from './components/WhatsApp';
 
 const App: FC = (): JSX.Element => {
   return (
@@ -17,6 +18,7 @@ const App: FC = (): JSX.Element => {
        <InfoGuemes/>
        <ContactForm/>
        <Footer/>
+       <WhatsApp/>
       </div>
     </>
   );
